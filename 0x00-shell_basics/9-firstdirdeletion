@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Delete the directory my_first_directory
+rm -r /tmp/my_first_directory
+
+# Check if the directory was deleted successfully
+if [ ! -d "/tmp/my_first_directory" ]; then
+    echo "Directory deleted successfully."
+else
+    echo "Failed to delete the directory."
+fi
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Delete the file betty
+rm /tmp/my_first_directory/betty
+
+# Check if the file was deleted successfully
+if [ ! -f "/tmp/my_first_directory/betty" ]; then
+    echo "File deleted successfully."
+else
+    echo "Failed to delete the file."
+fi
+
