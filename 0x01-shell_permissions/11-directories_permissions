@@ -1,0 +1,4 @@
+# Loop through all subdirectories and set execute permissions
+for dir in */; do
+    chmod +x "$dir"
+done
