@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -type f -exec stat --format="%Y %n" {} \; | sort -n -r | awk 'NR<=10 {print $2}'
+ls -t | head -10
