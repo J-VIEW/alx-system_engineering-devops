@@ -1,0 +1,2 @@
+#!/bin/bash
+while read -r word; do [ $(grep -c -w "$word") -eq 1 ] && echo "$word"; done | sort -u
