@@ -1,12 +1,2 @@
 #!/bin/bash
-
-# Move the file betty
 mv /tmp/betty /tmp/my_first_directory/
-
-# Check if the file was moved successfully
-if [ -f "/tmp/my_first_directory/betty" ]; then
-    echo "File moved successfully."
-else
-    echo "Failed to move the file."
-fi
-
