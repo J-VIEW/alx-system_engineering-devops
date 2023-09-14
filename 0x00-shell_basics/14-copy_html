@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -newermt "$(stat -c %y -t %Y-%m-%d %H:%M:%S /..)" -exec cp -u '{}' /.. \;
+find . -name "*.html" -newer ../ -exec cp {} ../ \;
